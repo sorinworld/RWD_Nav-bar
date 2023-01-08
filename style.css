@@ -28,7 +28,7 @@ a {
 
 .navbar-logo i {
   margin-right: 5px;
-  color: #e6ceff
+  color: #e6ceff;
 }
 
 .navbar-menu{
@@ -54,25 +54,45 @@ a {
   padding: 8px 12px;
 }
 
+.navbar-toggleBtn {
+  display: none;
+}
+
 
 @media screen and (max-width: 768px){
   .navbar{
     flex-direction: column;
     align-items: flex-start;
-    
-  
   }
+
   .navbar-menu{
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
+
   .navbar-menu li {
     width: 100%;
     text-align: center;
   }
+
   .navbar-icon {
+    display: none;
     justify-content: center;
     width: 100%;
+  }
+
+  .navbar-toggleBtn {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 12px;
+    font-size: 24px;
+    color: #e6ceff;
+  }
+  .navbar-menu.active,
+  .navbar-icon.active {
+    display: flex;
   }
 }
