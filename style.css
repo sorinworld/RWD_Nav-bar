@@ -1,3 +1,9 @@
+:root {
+  --text-color: #ffffff;
+  --background-color: #b39ddb;
+  --accent-color: #836fa9;
+}
+
 body{
   margin: 0;
   font-family: 'Noto Sans';
@@ -10,14 +16,14 @@ li {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b39ddb;
+  background-color: var(--background-color);
   padding: 8px 12px;
 }
 
@@ -28,7 +34,7 @@ a {
 
 .navbar-logo i {
   margin-right: 5px;
-  color: #e6ceff;
+  color: var(--accent-color);
 }
 
 .navbar-menu{
@@ -37,7 +43,7 @@ a {
 }
 
 .navbar-menu li:hover {
-  background-color: #836fa9;
+  background-color: var(--accent-color);
   border-radius: 5px;
 }
 
@@ -89,7 +95,7 @@ a {
     top: 4px;
     right: 12px;
     font-size: 24px;
-    color: #e6ceff;
+    color: var(--accent-color);
   }
   .navbar-menu.active,
   .navbar-icon.active {
